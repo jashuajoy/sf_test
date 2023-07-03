@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Employees" icon-name="custom:custom9">
+        <lightning-layout class="slds-var-m-around_medium">
+            <lightning-layout-item>
+                <template if:true={listIsNotEmpty}>
+                    <div>
+                        <p>Hello</p>
+                    </div>
+                    <template for:each={members} for:item="member">
+                        <c-child-comp3 key={member.id} member={member} onmemberclicked={memberSelected}></c-child-comp3>
+                    </template>
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-var-m-left_medium">
+                <template if:true={selectedMember}>
+                    <!-- <img src={selectedContact.Picture__c}></img> -->
+                    <p>{selectedMember.name}</p>
+                    <p>{selectedMember.role}</p>
+                    <!-- <p><lightning-formatted-phone value={selectedContact.Phone}></lightning-formatted-phone></p>
+                    <p><lightning-formatted-email value={selectedContact.Email}></lightning-formatted-email></p> -->
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,57 @@
+<template>
+    <lightning-card title="Actions Available" style="padding: 50px;">
+        <div style="height: 10%; overflow-y:scroll;"></div>
+        <div style="margin: 20px; border: 20px; display: inline;">
+            <lightning-button variant="brand" label="Add" onclick={handleAdd}></lightning-button>
+        </div>
+        <div style="margin: 20px; border: 20px; display: inline;">
+            <lightning-button variant="brand" label="Delete" onclick={handleDelete}></lightning-button>
+        </div>
+        <div style="margin: 20px; border: 20px; display: inline;">
+            <lightning-button variant="brand" label="Get All Data" onclick={handleGetAll}></lightning-button>
+        </div>
+        <div style="margin: 20px; border: 20px; display: inline;">
+            <lightning-button variant="brand" label="Search" onclick={handleSearch}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <template if:true={isAdd}>
+        <lightning-card title="Add">
+            <div class="scrollable">
+            <c-app-add-comp></c-app-add-comp>
+
+            </div>
+        </lightning-card>
+    </template>
+    
+    <template if:true={isDel}>
+        <lightning-card title="Delete">
+            <div class="scrollable">
+            <c-app-delete-comp></c-app-delete-comp>
+
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:true={isGetAll}>
+        <lightning-card title="Get All">
+            <div class="scrollable">
+                <c-app-get-all-page-comp></c-app-get-all-page-comp>
+
+            </div>
+            <!-- <c-app-get-all-comp></c-app-get-all-comp> -->
+        </lightning-card>
+    </template>
+
+    <template if:true={isSearch}>
+        <lightning-card title="Search">
+            <div class="scrollable">
+            <c-app-search-comp></c-app-search-comp>
+
+            </div>
+
+        </lightning-card>
+    </template>
+
+    <c-twilio-u-i-footer></c-twilio-u-i-footer>
+</template>

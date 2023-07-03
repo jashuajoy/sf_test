@@ -1,0 +1,47 @@
+<template>
+    <div style="background-color: aquamarine; color: black; font-size: 1em;">
+        <template if:true={allRecords}>
+            <template for:each={allRecords} for:item="rec">
+                <lightning-card key={rec.Id}>
+                    <h3 slot="title">
+                        <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+                        <div style="background-color:aquamarine;">
+                            <p class="slds-var-p-horizontal_small">
+                                Name: {rec.Name}
+                            </p>
+                        </div>
+                        
+                    </h3>
+                    <div class="slds-grid" style="background-color: rgb(82, 13, 160); color:aliceblue;">
+                        <div class="slds-col">
+                            <p class="slds-var-p-horizontal_small">
+                                Phone: {rec.number__c}
+                            </p>
+                        </div>
+                        <div class="slds-col">
+                            <p class="slds-var-p-horizontal_small">
+                                Email: {rec.email__c}
+                            </p>
+                        </div>
+                        <div class="slds-col">
+                            <p class="slds-var-p-horizontal_small">
+                                Join Date: {rec.joindate__c}
+                            </p>
+                        </div>
+                        <div class="slds-col">
+                            <p class="slds-var-p-horizontal_small">
+                                Course: {rec.course__c}
+                            </p>
+                        </div>
+                    </div>
+                </lightning-card>
+            </template>
+        </template>
+    </div>
+    <div style="background-color: rgb(223, 47, 47); color: black; font-size: 1em; font-weight:bold">
+         <template if:true={err}>
+             <h1>An error occurred: </h1>
+             <h1>{err}</h1>
+         </template>
+    </div>
+</template>

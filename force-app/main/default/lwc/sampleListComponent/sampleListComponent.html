@@ -1,0 +1,21 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div style="background-color: blanchedalmond; color: rgb(5, 25, 26); font-size: 1rem;">
+        <lightning-input label="Name" value={Name} onchange={handleName}></lightning-input>
+        <lightning-input label="Phone" value={Phone} onchange={handlePhone}></lightning-input>
+        <lightning-input label="Id" value={Id} onchange={handleId}></lightning-input>
+        <button class="slds-button slds-button_brand" onclick={handleAdd}>Add</button>
+    </div>
+
+    <div style="font-size: 1.2rem; background-color:cornflowerblue; color:black">
+        <template for:each={contacts} for:item="contact" for:index="ind">
+            <lightning-card key={contact.Id} title={contact.Name}>
+                <p>Phone : {contact.Phone}</p>
+                <p>Contact Id : {contact.Id}</p>
+                
+                <button class="slds-button slds-button_destructive" id={ind} onclick={handleDelete}>Destructive Button</button>
+            </lightning-card>
+        </template>
+    </div>
+
+</template>

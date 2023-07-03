@@ -1,0 +1,15 @@
+<template>
+    <div style="background-color: rgb(152, 152, 231);">
+        <h1 style="height: 50px;">Hello, {name}, Welcome to this UI App</h1>
+
+        <lightning-input type="checkbox" label="Show Input" onchange={handleChangeCheck}></lightning-input>
+        
+        <template if:true={isInputVisible}>
+            <div style="height: 30px;">
+                <lightning-input label="Enter Name" value={name} onchange={handleChange}></lightning-input>
+            </div>
+        </template>
+        
+    </div>
+
+</template>

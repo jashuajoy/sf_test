@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Doctor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Doctors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <picklistValues>
+            <masterLabel>GER</masterLabel>
+            <translation><!-- GER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IND</masterLabel>
+            <translation><!-- IND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWI</masterLabel>
+            <translation><!-- SWI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DOB --></label>
+        <name>DDOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>DSalary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Email --></label>
+        <name>D_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Name --></label>
+        <name>Doctor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Number --></label>
+        <name>Doctor_Number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

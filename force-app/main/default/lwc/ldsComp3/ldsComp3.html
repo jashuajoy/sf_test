@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Lightnint Record Edit Form: ">
+        <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2" style="background-color: rgb(134, 171, 202);">
+                    <lightning-input-field field-name="Name"></lightning-input-field>
+                    <lightning-input-field field-name="Title"></lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_1-of-2" style="background-color: rgb(197, 162, 236);">
+                    <lightning-input-field field-name="Phone"></lightning-input-field>
+                    <lightning-input-field field-name="Email"></lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-var-m-top_medium" style="background-color: rgba(188, 235, 145, 0.87);">
+                <lightning-button type="submit" variant="brand" label="Edit Contact"></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

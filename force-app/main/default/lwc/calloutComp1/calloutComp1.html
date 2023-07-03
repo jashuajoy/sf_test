@@ -1,0 +1,23 @@
+<template>
+    <div if:true={reqData}>
+        <lightning-card title="Data Received">
+            <template if:true={people}>
+                <div class="slds-grid">
+                    <template for:each={people} for:item="per">
+                        <div class="slds-col" key={per.id}>
+                            <lightning-card title={per.first_name}>
+                                <p>Email : {per.email}</p>
+                                <img src={per.avatar} alt="per Picture">
+                            </lightning-card>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </lightning-card>
+    </div>
+    <div if:true={error}>
+        <lightning-card title="Error Occurred">
+            {error}
+        </lightning-card>
+    </div>
+</template>

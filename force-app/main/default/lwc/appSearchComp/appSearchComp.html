@@ -1,0 +1,69 @@
+<template>
+    <div class="slds-var-m-around_medium">
+        <h1 class="slds-text-heading_small">Enter name to search: </h1>
+    </div>
+    <div onkeyup={handleKeyUp}>
+        <lightning-input
+            name="enter-search"
+            label="Name: "
+            type="search"
+            onchange={handleInput}
+        ></lightning-input>
+        <lightning-button variant="brand" label="Search" onclick={handleGetRecords}></lightning-button>
+    </div>
+    <div style="background-color: aquamarine; color: black; font-size: 1em;">
+        <template if:true={allRecords}>
+            <div style="background-color: aquamarine; color: black; font-size: 1em;">
+                <template if:true={allRecords}>
+                    <template for:each={allRecords} for:item="rec">
+                        <lightning-card key={rec.Id}>
+                            <h3 slot="title">
+                                <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+                                <div style="background-color:aquamarine;">
+                                    <p class="slds-var-p-horizontal_small">
+                                        Name: {rec.Name}
+                                    </p>
+                                </div>
+                                
+                            </h3>
+                            <div class="slds-grid" style="background-color: rgb(82, 13, 160); color:aliceblue;">
+                                <div class="slds-col">
+                                    <p class="slds-var-p-horizontal_small">
+                                        Phone: {rec.number__c}
+                                    </p>
+                                </div>
+                                <div class="slds-col">
+                                    <p class="slds-var-p-horizontal_small">
+                                        Email: {rec.email__c}
+                                    </p>
+                                </div>
+                                <div class="slds-col">
+                                    <p class="slds-var-p-horizontal_small">
+                                        Join Date: {rec.joindate__c}
+                                    </p>
+                                </div>
+                                <div class="slds-col">
+                                    <p class="slds-var-p-horizontal_small">
+                                        Course: {rec.course__c}
+                                    </p>
+                                </div>
+                            </div>
+                        </lightning-card>
+                    </template>
+                </template>
+            </div>
+        </template>
+        <div style="background-color: rgb(223, 47, 47); color: black; font-size: 1em; font-weight:bold">
+            <template if:true={noRecords}>
+                <h1 style="background-color: ivory; color: black">There are no records with the entered name</h1>
+            </template>
+       </div>
+        <div style="background-color: rgb(223, 47, 47); color: black; font-size: 1em; font-weight:bold">
+            <template if:true={error}>
+                <h1>An error occurred: </h1>
+                <h1>{error}</h1>
+            </template>
+       </div>
+    </div>
+    
+</template>

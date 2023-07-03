@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>B_Staff</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>B_Staffs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russia</masterLabel>
+            <translation><!-- Russia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee Email --></label>
+        <name>Employee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>Shift__c</name>
+        <picklistValues>
+            <masterLabel>Afternoon</masterLabel>
+            <translation><!-- Afternoon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evening</masterLabel>
+            <translation><!-- Evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morning</masterLabel>
+            <translation><!-- Morning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Night</masterLabel>
+            <translation><!-- Night --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_del__c</name>
+        <picklistValues>
+            <masterLabel>AS1</masterLabel>
+            <translation><!-- AS1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS2</masterLabel>
+            <translation><!-- AS2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS3</masterLabel>
+            <translation><!-- AS3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS4</masterLabel>
+            <translation><!-- AS4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delhi</masterLabel>
+            <translation><!-- Delhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karnataka</masterLabel>
+            <translation><!-- Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerala</masterLabel>
+            <translation><!-- Kerala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA1</masterLabel>
+            <translation><!-- RA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA2</masterLabel>
+            <translation><!-- RA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA3</masterLabel>
+            <translation><!-- RA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA4</masterLabel>
+            <translation><!-- RA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamil Nadu</masterLabel>
+            <translation><!-- Tamil Nadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telangana</masterLabel>
+            <translation><!-- Telangana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK1</masterLabel>
+            <translation><!-- UK1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK2</masterLabel>
+            <translation><!-- UK2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK3</masterLabel>
+            <translation><!-- UK3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK4</masterLabel>
+            <translation><!-- UK4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US1</masterLabel>
+            <translation><!-- US1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US2</masterLabel>
+            <translation><!-- US2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US3</masterLabel>
+            <translation><!-- US3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US4</masterLabel>
+            <translation><!-- US4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Location Pincode --></label>
+        <name>Work_Location_Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Location --></label>
+        <name>Work_Location__c</name>
+        <relationshipLabel><!-- Staff --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>B_Staff Layout</layout>
+        <sections>
+            <label><!-- Personal Information --></label>
+            <section>Personal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Staff Information --></label>
+            <section>Staff Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Enter a valid phone number:
+1. must contain 10 digits. --></errorMessage>
+        <name>Number_is_valid</name>
+    </validationRules>
+</CustomObjectTranslation>

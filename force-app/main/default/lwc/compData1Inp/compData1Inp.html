@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            <lightning-badge label="Input" class="slds-badge_inverse"></lightning-badge>
+        </h3>
+        <div >
+            <lightning-input required="true" label="Enter Name: " onchange={handleName}></lightning-input>
+            <lightning-input required="false" label="Enter Phone: " onchange={handlePhone}></lightning-input>
+
+        </div>
+        <div>
+            <lightning-button variant="brand-outline" label="Enter" onclick={handleInput} class="slds-var-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-card>
+
+    <template if:true={Id}>
+        <div style="background-color: rgb(92, 216, 92); color: black; font-size: 1em">
+            <p>Successfully inserted the record with Id: <lightning-badge label={Id} class="slds-badge_inverse"></lightning-badge></p>
+        </div>
+    </template>
+    <template if:true={error}>
+        <div style="background-color: rgb(223, 52, 52); color: rgb(181, 184, 42); font-size: 1em">
+            <p>
+                Error Occurred: 
+                <Strong style="background-color: white; color: Black">{error}</Strong>
+            </p>
+        </div>
+    </template>
+</template>

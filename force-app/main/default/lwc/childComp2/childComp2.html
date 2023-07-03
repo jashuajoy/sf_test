@@ -1,0 +1,11 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div>
+        <lightning-card title="Child component">
+            <p>Enter your Occupation: </p>
+            <lightning-input value={myVal} placeholder="Occupation" onchange={handleInput}></lightning-input>
+            <button class="slds-button slds-button_brand" onclick={sendDataToParentHandler}>Add</button>
+        </lightning-card>
+    </div>
+    
+</template>

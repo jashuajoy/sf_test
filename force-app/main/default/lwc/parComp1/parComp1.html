@@ -1,0 +1,15 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div>
+        <h1>Enter Values to take input</h1>
+        <div style="background-color: blanchedalmond; color: cadetblue; font-size: 1rem;">
+            <lightning-input label="Name" value={Name} onchange={handleName}></lightning-input>
+            <lightning-input label="Phone" value={Phone} onchange={handlePhone}></lightning-input>
+            <lightning-input label="Id" value={Id} onchange={handleId}></lightning-input>
+            <button class="slds-button slds-button_brand" onclick={sendToChild}>Add</button>
+        </div>
+    </div>
+    <c-child-comp1 myval="In Child"
+
+    ></c-child-comp1>
+</template>

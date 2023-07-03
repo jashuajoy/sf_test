@@ -1,0 +1,18 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Lightnint Record Form(with modes): ">
+        <lightning-record-form
+            record-id={recordId}
+            object-api-name={objectApiName}
+            fields={fields}
+            mode={mode}>
+        </lightning-record-form>
+        <div if:true={tmpMd} style="background-color: aqua; color: black">
+            <lightning-input label="Change mode to " value={mode} onchange={hModeChange}></lightning-input>
+            <button class="slds-button slds-button_brand" onclick={handleModeChg}>Change Mode</button>
+            
+        </div>
+    </lightning-card>
+    
+    
+</template>

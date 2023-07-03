@@ -1,0 +1,28 @@
+<template>
+    <div style="background-color: aquamarine; color: black; font-size: 1em;">
+        <template if:true={accs}>
+            <template for:each={accs} for:item="acc">
+                <lightning-card key={acc.Id}>
+                    <h3 slot="title">
+                        <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+                        <div style="background-color:aquamarine;">
+                            <p class="slds-var-p-horizontal_small">
+                                Name: {acc.Name}
+                            </p>
+                        </div>
+                        
+                    </h3>
+                    <p class="slds-var-p-horizontal_small">
+                        Phone: {acc.Phone}
+                    </p>
+                </lightning-card>
+            </template>
+        </template>
+    </div>
+    <div style="background-color: rgb(223, 47, 47); color: black; font-size: 1em; font-weight:bold">
+         <template if:true={err}>
+             <h1>An error occurred: </h1>
+             <h1>{err}</h1>
+         </template>
+    </div>
+</template>

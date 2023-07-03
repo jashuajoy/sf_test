@@ -1,0 +1,45 @@
+<template>
+    <template if:true={trucks}>
+        <table border="3" style="background-color: rgb(214, 253, 253); text-align: center">
+            <thead>
+                <tr>
+                    <td>Truck Image</td>
+                    <td>Truck Name</td>
+                    <td>Truck Mileage</td>
+                    <td>Truck Price</td>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr for:each={trucks} for:item="truck" key={truck.Id}>
+                    <td>
+                        <img src={truck.Img} alt="Truck Image" style="width: 150px; height: 100px">
+                    </td>
+                    <td>
+                        <p>{truck.Name}</p>
+                    </td>
+                    <td>
+                        <p>{truck.Mileage}</p>
+                    </td>
+                    <td>
+                        <p>{truck.Price}</p>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+        <!-- <template for:each={trucks} for:item="truck">
+            <lightning-layout vertical-align="center" key={truck.Id}>
+                <lightning-layout-item padding="around-small">
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+
+                </lightning-layout-item>
+            </lightning-layout>
+        </template> -->
+    </template>
+    <template if:false={trucks}>
+        No data is provided to child component.
+    </template>
+    
+</template>
