@@ -9,8 +9,7 @@ export default class CompData1 extends LightningElement {
     result({data, error}){
         if(data){
             this.accs = data;
-        }
-        if(error){
+        }else if(error){
             console.log(error);
             this.err = error;
         }
